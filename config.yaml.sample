@@ -1,0 +1,11 @@
+telegram:
+  name    : "dw1"
+  api_id  : **********
+  api_hash: "**********"
+  channels:
+    - "thehackernews"
+    - "thebugbountyhunter"
+
+slack:
+  webhook: "https://hooks.slack.com/services/**********"
+  log    : "channel-messages.log"
