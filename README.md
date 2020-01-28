@@ -16,9 +16,24 @@ $ cd Teleslack
 $ cp config.yaml.sample config.yaml
 ```
 
-#### Configuration
+### Configuration
 
-##### Telegram
+```yaml
+telegram:
+  name    : "dw1" # session name
+  api_id  : **********
+  api_hash: "**********"
+  ## Public Telegram Channels ##
+  channels:
+    - "thehackernews"
+    - "thebugbountyhunter"
+
+slack:
+  webhook: "https://hooks.slack.com/services/**********" # Incoming Webhooks URL
+  log    : "channel-messages.log" # Log file
+```
+
+#### Telegram
 
 1. [Login to your Telegram account](https://my.telegram.org/) with the phone number of the developer account to use.
 2. Click under API Development tools.
@@ -27,20 +42,6 @@ $ cp config.yaml.sample config.yaml
 
 > This API ID and hash is the one used by your application, not your phone number. You can use this API ID and hash with any phone number or even for bot accounts.
 
-##### Slack
+#### Slack
 
 Read this [basic app Slack setup](https://api.slack.com/authentication/basics).
-
-```yaml
-telegram:
-  name    : "dw1"
-  api_id  : **********
-  api_hash: "**********"
-  channels:
-    - "thehackernews"
-    - "thebugbountyhunter"
-
-slack:
-  webhook: "https://hooks.slack.com/services/**********"
-  log    : "channel-messages.log"
-```
