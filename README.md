@@ -45,3 +45,11 @@ slack:
 #### Slack
 
 Read this [basic app Slack setup](https://api.slack.com/authentication/basics).
+
+### Usage
+
+Cron every 30 minutes _(recommended)_.
+
+```bash
+*/30 * * * * cd /home/dw1/Teleslack && /usr/bin/python3 main.py
+```
